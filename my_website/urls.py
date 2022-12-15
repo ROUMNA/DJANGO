@@ -17,10 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
 from .views import index, page, index_template
-from app1.views import page_acceuil, model_view, python_profil, page_app
+from app1.views import *
 
 urlpatterns = [
     url("page/", model_view, name= "model"),
     url("python_profil", python_profil , name = "python"),
+    url("datascience", data_science , name = "datascience"),
     url("", page_acceuil, name = "home") 
     ]

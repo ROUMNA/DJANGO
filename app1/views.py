@@ -8,6 +8,10 @@ def python_profil(request) :
     template = loader.get_template("index_python.html")  
     return HttpResponse(template.render(request= request))
 
+def data_science(request) :
+    template = loader.get_template("index_ds.html")  
+    return HttpResponse(template.render(request= request))    
+
 def page_acceuil(request) :
     template = loader.get_template("index_app.html")  
     return HttpResponse(template.render(request= request))    
