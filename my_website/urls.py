@@ -23,5 +23,7 @@ urlpatterns = [
     url("page/", model_view, name= "model"),
     url("python_profil", python_profil , name = "python"),
     url("datascience", data_science , name = "datascience"),
+    url("trainer", trainer_profil , name = "trainerprofil"),
+
     url("", page_acceuil, name = "home") 
     ]
