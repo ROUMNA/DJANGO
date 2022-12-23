@@ -16,14 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
-from .views import index, page, index_template
 from app1.views import *
+from app2.views import *
 
 urlpatterns = [
     url("page/", model_view, name= "model"),
     url("python_profil", python_profil , name = "python"),
     url("datascience", data_science , name = "datascience"),
     url("trainer", trainer_profil , name = "trainerprofil"),
-
     url("", page_acceuil, name = "home") 
     ]

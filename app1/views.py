@@ -14,7 +14,8 @@ def data_science(request) :
 
 def trainer_profil(request) :
     template = loader.get_template("index_trainer.html")  
-    return HttpResponse(template.render(request= request))       
+    return HttpResponse(template.render(request= request))
+           
 
 def page_acceuil(request) :
     template = loader.get_template("index_app.html")  
